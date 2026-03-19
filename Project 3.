@@ -1,6 +1,5 @@
 https://editor.p5js.org/evilmancala/sketches/INdSQEZk6
 let size = 1;
-let opacity = 255;
 
 //create Canvas
 function setup() {
@@ -88,3 +87,12 @@ saveCanvas ('drawt','png.','png');
 }
 strokeWeight(size);
 }
+
+// Quick Relfection since I finished
+// Changed it to press to draw after thinking I was so cool to not use it.
+// It is useful... and was the only way I could change the brush size.
+// Lots of colors! Probably an easier way to do it but I think I have a good selection.
+// This week decided to be scarily busy and that's not including finals so this is my scramble!
+// I'm just glad I added an eraser because we all make mistakes (literally this project LOL)
+// I realize this assignment is pretty boring in comparison to other drawing machines BUT
+// It was surprisingly harder to find one like mine on p5js (unless I'm super blind)
