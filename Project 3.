@@ -1,0 +1,90 @@
+https://editor.p5js.org/evilmancala/sketches/INdSQEZk6
+let size = 1;
+let opacity = 255;
+
+//create Canvas
+function setup() {
+createCanvas(windowWidth, windowHeight);
+background(255);
+
+}
+
+function draw() {
+if (mouseIsPressed){
+  line(mouseX, mouseY, pmouseX, pmouseY);
+    
+}
+}
+
+//button features!!
+
+//1. clear and save canvas features
+function keyTyped() {
+  if (key === "Enter"){
+   clear();
+}
+  
+  if (key === "v") {
+saveCanvas ('drawt','png.','png');
+
+}
+  
+  //2. Main Colors + Eraser
+  if (key == '1') {
+    stroke("red");
+  }
+
+  if (key == '2') {
+    stroke("orange");
+  }
+  
+  if (key == '3') {
+    stroke("yellow");
+  }
+  
+   if (key == '4') {
+    stroke("lime");
+  }
+  
+   if (key == '5') {
+    stroke("cyan");
+  }
+  
+   if (key == '6') {
+    stroke("blue");
+  }
+  
+   if (key == '7') {
+    stroke("purple");
+  }
+  
+   if (key == '8') {
+    stroke("tan");
+  }
+  
+   if (key == '9') {
+    stroke("violet");
+  }
+  
+   if (key == '0') {
+    stroke("black");
+  }
+  
+  if (key == 'e') {
+    stroke(255, 255, 255);
+  }
+  
+}
+
+ //3. Adjust Brush Size
+
+  function keyPressed() {
+  if (keyCode == LEFT_ARROW && size > 1) {
+    size -= 2;
+  }
+  
+  if (keyCode == RIGHT_ARROW){
+  size += 2;
+}
+strokeWeight(size);
+}
